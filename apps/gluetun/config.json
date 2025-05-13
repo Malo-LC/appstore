@@ -1,0 +1,20 @@
+{
+	"$schema": "https://raw.githubusercontent.com/runtipi/runtipi-appstore/refs/heads/master/apps/app-info-schema.json",
+	"name": "Gluetun",
+	"id": "gluetun",
+	"available": true,
+	"short_desc": "Lightweight swiss-army-knife-like VPN client to multiple VPN service providers",
+	"description": "VPN client in a thin Docker container for multiple VPN providers, written in Go, and using OpenVPN or Wireguard, DNS over TLS, with a few proxy servers built-in.",
+	"author": "qdm12",
+	"port": 8888,
+	"categories": ["network", "media", "security"],
+	"tipi_version": 1,
+	"version": "v3.40.0",
+	"source": "https://github.com/qdm12/gluetun",
+	"exposable": true,
+	"supported_architectures": ["arm64", "amd64"],
+	"created_at": 1747157939931,
+	"updated_at": 1747157939931,
+	"dynamic_config": true,
+	"form_fields": []
+}

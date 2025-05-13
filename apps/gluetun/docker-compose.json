@@ -1,0 +1,26 @@
+{
+	"$schema": "https://raw.githubusercontent.com/runtipi/runtipi-appstore/refs/heads/master/apps/dynamic-compose-schema.json",
+	"services": [
+		{
+			"name": "gluetun",
+			"image": "qmcgaw/gluetun",
+			"internalPort": 8888,
+			"volumes": [
+				{
+					"hostPath": "${APP_DATA_DIR}/gluetun",
+					"containerPath": "/gluetun",
+					"readOnly": false,
+					"shared": false,
+					"private": false
+				}
+			],
+			"environment": {
+				"PUID": "1000",
+				"PGID": "1000",
+				"TZ": "${TZ}"
+			},
+			"devices": ["/dev/net/tun:/dev/net/tun"],
+			"capAdd": ["NET_ADMIN"]
+		}
+	]
+}
